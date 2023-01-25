@@ -1,0 +1,104 @@
+
+Test 1: Login Page – Authentication Successfully
+
+Description: A registered user should be able to successfully log in at the application
+Requirements: the user must already on the application with a user and password.
+Assumption: a supported browser is being used.
+
+Test Case Steps:
+•	Navigate to https://katalon-demo-cura.herokuapp.com/
+•	In the 'Username' field, enter the user of the registered user.
+•	in the 'Password' field, enter the password of the registered user.
+•	Click 'Login'.
+
+Expected Result: A page displaying the Make appointment should load, showing all fields of the application for register an appointment.
+
+
+Test 2: Make an appointment – Successfully book an appointment.
+
+Description: A registered user should be able to successfully book an appointment.
+Precondition: the user must already be logged in.
+Assumption: a supported browser is being used.
+
+Test Case Steps:
+•	Navigate to https://katalon-demo-cura.herokuapp.com/ and login.
+•	In the 'Facility'' dropdown field select one option.
+•	Check the option on the checkbox 'Apply for hospital readmission'.
+•	Select one option on radio button for 'Medicare, Medicaid or None'.
+•	Select one valid date for the visit on the date Picker 'Visit Date'.
+•	Enter and comment on the field 'Comment'.
+•	Click 'Book Appointment'.
+
+Expected Result: A page displaying the information's entered for the appointment.
+
+Test 3: History Page – Confirm appointment on history page. 
+
+Description: A registered user should be able to successfully log in and check the History session for an previous completed appointment.
+Precondition: the user must already be registered at least one appointment.
+Assumption: a supported browser is being used.
+
+Test Case Steps:
+•	Navigate to https://katalon-demo-cura.herokuapp.com/ and log in.
+•	Click on menu icon on the top right of the page.
+•	Click on the menu option 'History'.
+•	Check if the appointment has the previous entered date.
+•	Check if option 'Facility' has a previous entered information's.
+•	Check if option 'Apply for hospital readmission' has a previous entered information's.
+•	Check if option 'Healthcare Program' has a previous entered information's.
+•	Check if option 'Comment' has a previous entered information's.
+
+Expected Result: A page displaying all information of the appointment with previous entered information.
+ 
+Test Case 4: Profile Page – Check Profile page edit user and logout.
+
+Description: A registered user should be able to successfully log in, check Profile page, edit information and logout.
+Precondition: the user must already be logged in.
+Assumption: a supported browser is being used.
+
+Test Steps:
+•	Navigate to https://katalon-demo-cura.herokuapp.com/ and log in.
+•	Click on menu icon on the top right of the page.
+•	Click on the menu option 'Profile'.
+•	Check if Profile page was showing.
+•	Check username Name.
+•	Check username Picture.
+•	Check username Email.
+•	Check username information prefilled.
+•	Click on Edit Profile.
+•	Change Name.
+•	Change Picture.
+•	Change Email.
+•	Click on Save.
+•	Check all edited information.
+•	Click on 'Logout' button.
+
+Expected Result: The Home page is displaying to Make Appointment and login again.
+ 
+Test Case 5: Supposed create and remove user admin Page. 
+
+Description: Try to login with an admin user and create and remove user.
+Precondition: the user must use must be and admin.
+Assumption: a supported browser is being used.
+
+Test Case Steps:
+
+Test Case Steps:
+•	Navigate to https://katalon-demo-cura.herokuapp.com/
+•	In the 'Username' field, enter an admin user.
+•	in the 'Password' field, enter an admin password for the previous user.
+•	Click on menu icon on the top right of the page.
+•	Click on the menu option 'Admin?'.
+•	On the Admin section click on Users.
+•	Click to Add an user.
+•	in the name textbox fill with the name of the user
+•	In the username textbox fill with the username.
+•	in the name textbox fill with the email fill with and valid email for the user.
+•	Fill other required information related to the creation of user.
+•	Click to Add.
+•	Verify if user was created.
+•	Verify all previous filled information's of the user.
+•	On User list click to remove user.
+•	Click on yes option to check the 'Are you sure?'
+•	Verify successfully removed information.
+
+Expected Result: Create and user, verify all pre-filled information's and remove the user.
